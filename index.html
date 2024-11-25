@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body class="bg-[#F6F7F8]">
+    <!-- Navbar -->
+    <div
+      style="margin-left: 18px; margin-right: 18px"
+      class="bg-[#FFFFFF] rounded-[70px] px-4 opacity-[1] py-1 mt-4 justify-around items-center flex flex-row"
+    >
+      <img src="TestLogo.png" alt="" />
+      <ul class="flex items-center gap-8">
+        <li class="text-[#072635] flex items-center text-[14px] gap-2">
+          <img src="home.svg" alt="" />
+          Overview
+        </li>
+        <li
+          class="text-[#072635] flex items-center text-[14px] gap-2 bg-[#01F0D0] rounded-[41px] opacity-[1] px-3 py-2"
+        >
+          <img src="patient.svg" alt="" />
+          Patients
+        </li>
+        <li class="text-[#072635] flex items-center text-[14px] gap-2">
+          <img src="schedule.svg" alt="" />
+          Schedule
+        </li>
+        <li class="text-[#072635] flex items-center text-[14px] gap-2">
+          <img src="message.svg" alt="" />
+          Message
+        </li>
+        <li class="text-[#072635] flex items-center text-[14px] gap-2">
+          <img src="Transactions.svg" alt="" />
+          Transactions
+        </li>
+      </ul>
+      <div class="flex items-center gap-5">
+        <img src="navimg.png" alt="" />
+        <span class="flex flex-col">
+          <h3 class="text-[#072635] font-bold text-[14px]">Dr. Jose Simmons</h3>
+          <p class="text-[#707070] text-[14px]">General Practitioner</p>
+        </span>
+        <div class="flex items-center gap-5">
+          <img src="settings.svg" alt="" />
+          <img src="more.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div style="margin-left: 18px; margin-right: 18px" class="py-5">
+      <div class="flex justify-around px-4">
+        <!-- Patients -->
+        <div class="flex flex-col bg-[#FFFFFF] w-[367px] max-w-full mt-4">
+          <div class="flex flex-row items-center justify-between px-3">
+            <h3 class="text-[24px] font-bold text-[#072635]">Patients</h3>
+            <img src="search.svg" alt="" />
+          </div>
+
+          <div
+            class="scroll-container h-64 overflow-y-auto scrollbar scrollbar-thumb-indigo-800 scrollbar-track-gray-700"
+          >
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="emily.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Emily Williams
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Female, 18</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="ryan.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Ryan Johnson
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 45</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="brandon.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Brandon Mitchell
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 36</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div
+              class="px-3 flex flex-row items-center justify-between mb-5 bg-[#D8FCF7]"
+            >
+              <div class="flex items-center gap-2">
+                <img src="jessica.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Jessica Taylor
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Female, 28</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="samantha.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Samantha Johnson
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Female, 56</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="ashely.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Ashley Martinez
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Female, 18</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="olivia.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Olivia Brown
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Female, 32</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="tyler.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Tyler Davis
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 19</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="kevin.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Kevin Anderson
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 30</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="dylan.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Dylan Thompson
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 36</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="nathan.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Nathan Evans
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 58</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+            <div class="px-4 mb-5 flex flex-row items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img src="mike.png" alt="" />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#072635] text-[14px] font-bold">
+                    Mike Nolan
+                  </h3>
+                  <p class="text-[#707070] text-[14px]">Male, 31</p>
+                </div>
+              </div>
+              <img src="morep.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart Diagnosis and Diagnostic -->
+        <div class="flex flex-col px-4 py-4 w-[650px] max-w-full">
+          <div class="bg-[#FFFFFF] px-[18px] py-[18px] mb-5">
+            <h1 class="text-3xl font-bold mb-6">Diagnosis History</h1>
+            <div
+              id="chart-container"
+              class="px-6 flex flex-wrap justify-between items-start bg-[#f7f2fc] gap-6"
+            >
+              <!-- Chart Area -->
+              <div class="flex-shrink-0">
+                <canvas width="500" height="400" id="myChart"></canvas>
+              </div>
+              <!-- Info Panel -->
+              <span class="flex flex-col gap-5 pt-[70px]">
+                <div class="flex flex-col gap-3">
+                  <span class="flex flex-row items-center gap-2">
+                    <button style="width: 14px; height: 14px; border-radius: 9999px; background-color: #E66FD2;"
+                    ></button>
+                    <h3 class="font-bold">Systolic</h3>
+                  </span>
+                  <p
+                    class="font-bold text-[#072635] text-[22px]"
+                    id="systolic-value"
+                  >
+                    Loading...
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img src="ArrowUp.svg" alt="" />
+                    <p id="systolic-status">Loading...</p>
+                  </div>
+                </div>
+
+                <hr class="h-[1px] w-[208px] bg-[#CBC8D4]" />
+                <div class="flex flex-col gap-2">
+                  <span class="flex flex-row items-center gap-2">
+                    <button style="width: 14px; height: 14px; border-radius: 9999px; background-color: #8C6FE6;"></button>
+                    <h3 class="mt-[60px] font-bold">Diastolic</h3>
+                  </span>
+                  <p
+                    class="text-[24px] font-bold text-[#072635]"
+                    id="diastolic-value"
+                  >
+                    Loading...
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img src="ArrowDown.svg" alt="" />
+                    <p id="diastolic-status">Loading...</p>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <!-- containers -->
+            <div class="flex items-center gap-8 py-5">
+              <div
+                class="flex-col flex gap-3 py-3 px-3 w-[228px] h-[242px] bg-[#E0F3FA] rounded-xl"
+              >
+                <img src="respiration.png" alt="" />
+                <h3 id="resp" class="text-[#072635] text-[16px]">
+                  Respiratory Rate
+                </h3>
+                <h1
+                  id="resp-bpm"
+                  class="text-[#072635] text-[30px] font-bold"
+                ></h1>
+                <p id="resp-para" class="text-[#072635] text-[14px]"></p>
+              </div>
+              <div
+                class="flex-col flex gap-3 py-3 px-3 w-[228px] h-[242px] bg-[#FFE6E9] rounded-xl"
+              >
+                <img src="temperature.png" alt="" />
+                <h3 id="temp" class="text-[#072635] text-[16px]">
+                  Temperature
+                </h3>
+                <h1
+                  id="temp-bpm"
+                  class="text-[#072635] text-[30px] font-bold"
+                ></h1>
+                <p id="temp-para" class="text-[#072635] text-[14px]"></p>
+              </div>
+              <div
+                class="flex-col flex gap-3 py-3 px-3 w-[228px] h-[242px] bg-[#FFE6F1] rounded-xl"
+              >
+                <img src="heart.png" alt="" />
+                <h3 id="heart" class="text-[#072635] text-[16px]">
+                  Heart Rate
+                </h3>
+                <h1
+                  id="heart-bpm"
+                  class="text-[#072635] text-[30px] font-bold"
+                ></h1>
+                <span
+                  class="text-[#072635] text-[14px] flex items-center flex-row gap-2"
+                >
+                  <img src="ArrowDown.svg" alt="" />
+                  <p id="heart-para"></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diagnostic List -->
+          <div class="bg-[#FFFFFF] px-4 py-5 w-full rounded-lg">
+            <h1 class="text-[#072635] text-[24px] font-bold mb-4">
+              Diagnostic List
+            </h1>
+            <table class="border-collapse w-full text-left">
+              <!-- Table Header -->
+              <thead class="bg-[#F6F7F8] p-4 rounded-lg mt-6">
+                <tr class="text-[#072635] text-[14px] font-bold">
+                  <th class="p-4 border-b">Problem/Diagnosis</th>
+                  <th class="p-4 border-b">Description</th>
+                  <th class="p-4 border-b">Status</th>
+                </tr>
+              </thead>
+              <!-- Table Body -->
+              <tbody>
+                <tr class="p-3 border-b">
+                  <td id="problems" class="p-4 text-[#072635] text-[14px]"></td>
+                  <td
+                    id="description"
+                    class="p-4 text-[#072635] text-[14px]"
+                  ></td>
+                  <td id="status" class="p-4 text-[#072635] text-[14px]"></td>
+                </tr>
+                <!-- Example Rows -->
+                <tr class="bg-gray-50 hover:bg-gray-100">
+                  <td class="p-4 text-[#072635] text-[14px]">
+                    Type 2 Diabetes
+                  </td>
+                  <td class="p-4 text-[#072635] text-[14px]">
+                    Insulin resistance and elevated blood sugar
+                  </td>
+                  <td class="p-4 text-[#072635] text-[14px] font-medium">
+                    Cured
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                  <td class="p-4 text-[#072635] text-[14px]">Asthma</td>
+                  <td class="p-4 text-[#072635] text-[14px]">
+                    Recurrent episodes of bronchial constriction
+                  </td>
+                  <td class="p-4 text-[#072635] text-[14px] font-medium">
+                    Inactive
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- The patient & Lab result -->
+        <div class="flex flex-col gap-10 w-[367px]">
+          <!-- The patient: Jessica Taylor -->
+          <div
+            class="flex flex-col gap-7 rounded-[16px] bg-[#FFFFFF] px-4 py-4"
+          >
+            <img id="profile" src="" alt="" />
+            <h1
+              style="text-align: center"
+              id="name"
+              class="text-[#072635] text-[24px] font-bold"
+            ></h1>
+            <div class="flex flex-col gap-5">
+              <div class="flex items-center gap-2">
+                <img src="birth.png" alt="" />
+                <span class="flex flex-col gap-2">
+                  <h3 class="text-[#072635] text-[14px]">Date Of Birth</h3>
+                  <p id="birth" class="text-[#072635] text-[14px]"></p>
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="gender.png" alt="" />
+                <span class="flex flex-col gap-2">
+                  <h3 class="text-[#072635] text-[14px]">Date Of Birth</h3>
+                  <p id="gender" class="text-[#072635] text-[14px]"></p>
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="contact.png" alt="" />
+                <span class="flex flex-col gap-2">
+                  <h3 class="text-[#072635] text-[14px]">Date Of Birth</h3>
+                  <p id="contact" class="text-[#072635] text-[14px]"></p>
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="contact.png" alt="" />
+                <span class="flex flex-col gap-2">
+                  <h3 class="text-[#072635] text-[14px]">Date Of Birth</h3>
+                  <p id="emergency" class="text-[#072635] text-[14px]"></p>
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="insurance.png" alt="" />
+                <span class="flex flex-col gap-2">
+                  <h3 class="text-[#072635] text-[14px]">Date Of Birth</h3>
+                  <p id="insurance" class="text-[#072635] text-[14px]"></p>
+                </span>
+              </div>
+            </div>
+
+            <button
+              class="text-[#072635] bg-[#01F0D0] rounded-[41px] px-3 py-3 font-bold w-[221px] h-[41px]"
+            >
+              Show All Information
+            </button>
+          </div>
+
+          <!-- Lab Results  -->
+
+          <div
+            class="flex flex-col gap-7 flex-wrap bg-[#FFFFFF] rounded-[16px] px-4 py-4"
+          >
+            <h1 class="text-[#072635] text-[24px] font-bold">Lab Results</h1>
+            <div class="flex flex-col gap-8">
+              <div class="flex justify-between">
+                <p id="lab-1" class="text-[13px] text-[#072635]"></p>
+                <img src="download.png" alt="" />
+              </div>
+
+              <div class="flex justify-between rounded-lg bg-[#F6F7F8] py-2">
+                <p id="lab-2" class="text-[13px] text-[#072635]"></p>
+                <img src="download.png" alt="" />
+              </div>
+
+              <div class="flex justify-between">
+                <p id="lab-3" class="text-[13px] text-[#072635]"></p>
+                <img src="download.png" alt="" />
+              </div>
+
+              <div class="flex justify-between">
+                <p id="lab-4" class="text-[13px] text-[#072635]"></p>
+                <img src="download.png" alt="" />
+              </div>
+
+              <div class="flex justify-between">
+                <p id="lab-5" class="text-[13px] text-[#072635]">Urine Test</p>
+                <img src="download.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      fetch("https://fedskillstest.coalitiontechnologies.workers.dev", {
+        method: "GET",
+        headers: {
+          Authorization: "Basic Y29hbGl0aW9uOnNraWxscy10ZXN0",
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          
+          const diagnosisHistory = data[3].diagnosis_history;
+          const diagnosticList = data[3].diagnostic_list;
+          
+          const systolicValues = [120, 120, 160, 120, 150, 160]; 
+          const diastolicValues = [110, 63, 105, 85, 70, 79]; 
+          const months = [
+            "Oct, 2023",
+            "Nov, 2023",
+            "Dec, 2023",
+            "Jan, 2024",
+            "Feb, 2024",
+            "Mar, 2024",
+          ]; 
+
+          const latestSystolic =
+            diagnosisHistory[diagnosisHistory.length - 1].blood_pressure
+              .systolic;
+          const latestDiastolic =
+            diagnosisHistory[diagnosisHistory.length - 1].blood_pressure
+              .diastolic;
+          const heartRate =
+            diagnosisHistory[diagnosisHistory.length - 1].heart_rate;
+          const respiration =
+            diagnosisHistory[diagnosisHistory.length - 1].respiratory_rate;
+          const temperature =
+            diagnosisHistory[diagnosisHistory.length - 1].temperature;
+
+          
+          document.getElementById("systolic-value").textContent =
+            latestSystolic.value;
+          document.getElementById("systolic-status").textContent =
+            latestSystolic.levels;
+
+          document.getElementById("diastolic-value").textContent =
+            latestDiastolic.value;
+          document.getElementById("diastolic-status").textContent =
+            latestDiastolic.levels;
+
+          document.getElementById(
+            "heart-bpm"
+          ).textContent = `${heartRate.value} bpm`;
+          document.getElementById("heart-para").textContent = heartRate.levels;
+          document.getElementById(
+            "temp-bpm"
+          ).textContent = `${temperature.value} 0F`; //+
+          document.getElementById("temp-para").textContent = temperature.levels;
+          document.getElementById(
+            "resp-bpm"
+          ).textContent = `${respiration.value} bpm`;
+          document.getElementById("resp-para").textContent = respiration.levels;
+
+          diagnosticList.forEach((diagnostic) => {
+            document.getElementById("problems").textContent = diagnostic.name;
+            document.getElementById("description").textContent =
+              diagnostic.description;
+            document.getElementById("status").textContent = diagnostic.status;
+
+              // Patient
+            document.getElementById("name").textContent = data[3].name;
+            document.getElementById("profile").src = data[3].profile_picture;
+            document.getElementById("birth").textContent =
+              data[3].date_of_birth;
+            document.getElementById("gender").textContent = data[3].gender;
+            document.getElementById("contact").textContent =
+              data[3].phone_number;
+            document.getElementById("emergency").textContent =
+              data[3].emergency_contact;
+            document.getElementById("insurance").textContent =
+              data[3].insurance_type;
+
+            // Lab Results
+            document.getElementById("lab-1").textContent =
+              data[3].lab_results[0];
+            document.getElementById("lab-2").textContent =
+              data[3].lab_results[1];
+            document.getElementById("lab-3").textContent =
+              data[3].lab_results[2];
+            document.getElementById("lab-4").textContent =
+              data[3].lab_results[3];
+          });
+
+          // the chart
+          const ctx = document.getElementById("myChart").getContext("2d");
+          new Chart(ctx, {
+            type: "line",
+            data: {
+              labels: months,
+              datasets: [
+                {
+                  label: "Systolic",
+                  data: systolicValues,
+                  borderColor: "rgba(238, 54, 161, 1)",
+                  backgroundColor: "rgba(238, 54, 161, 0.2)",
+                  borderWidth: 2,
+                  pointBackgroundColor: "rgba(230, 111, 210, 1)",
+                  pointBorderColor: "rgba(230, 111, 210, 1)",
+                  pointBorderWidth: 5,
+                  tension: 0.4,
+                },
+                {
+                  label: "Diastolic",
+                  data: diastolicValues,
+                  borderColor: "rgba(99, 95, 253, 1)",
+                  backgroundColor: "rgba(99, 95, 253, 0.2)",
+                  borderWidth: 2,
+                  pointBackgroundColor: "rgba(238, 54, 161, 0.2)",
+                  pointBorderColor: "rgba(140, 111, 230, 1)",
+                  pointBorderWidth: 5,
+                  tension: 0.4,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: {
+                  display: true,
+                  position: "top",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  max: 200, 
+                },
+              },
+            },
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+                  });
+    </script>
+  </body>
+</html>
